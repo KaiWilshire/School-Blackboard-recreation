@@ -1,0 +1,176 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Stamford Blackboard - Home</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" crossorigin="anonymous">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+<body data-page="home">
+  <nav class="navbar navbar-expand-lg navbar-dark app-navbar">
+    <a class="navbar-brand app-brand" href="home.html">
+      <img src="images/Stamford-Logo.png" class="app-brand-logo" alt="Stamford Logo">
+    </a>
+    <button class="navbar-toggler app-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav mx-auto app-nav-links">
+          <li class="nav-item active"><a class="nav-link" href="home.html"><i class="fa-solid fa-house mr-1"></i>Home <span class="sr-only">(current)</span></a></li>
+          <li class="nav-item"><a class="nav-link" href="assignments.html"><i class="fa-solid fa-book-open mr-1"></i>Courses</a></li>
+          <li class="nav-item"><a class="nav-link" href="schedule.html"><i class="fa-regular fa-calendar-days mr-1"></i>Schedule</a></li>
+          <li class="nav-item"><a class="nav-link" href="supplies.html"><i class="fa-solid fa-bag-shopping mr-1"></i>Supplies</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html"><i class="fa-regular fa-address-card mr-1"></i>Contact</a></li>
+      </ul>
+      <div class="dropdown app-user-menu">
+        <button class="btn dropdown-toggle d-flex align-items-center" type="button" id="hamburgerMenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          <i class="fa-regular fa-user mr-1"></i>
+          <span>Student</span>
+        </button>
+        <div class="dropdown-menu dropdown-menu-right shadow" aria-labelledby="hamburgerMenu">
+          <a class="dropdown-item" href="profile.html"><i class="fa-regular fa-id-card mr-2"></i>Profile</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item text-danger" href="Login.html"><i class="fa-solid fa-arrow-right-from-bracket mr-2"></i>Sign Out</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+<main class="container my-4">
+    <div class="d-flex justify-content-between align-items-center flex-wrap mb-3">
+      <div>
+        <h1 class="page-title mb-1">Student Dashboard</h1>
+        <p class="text-muted mb-0">Today's classes, campus updates, and quick student tools.</p>
+      </div>
+      <a href="assignments.html" class="btn btn-primary mt-3 mt-sm-0"><i class="fa-solid fa-book-open mr-2"></i>View Courses</a>
+    </div>
+
+    <section class="mb-4" aria-label="Announcements">
+      <div class="card shadow-sm">
+        <div class="card-body">
+          <h4 class="card-title mb-3"><i class="bi bi-megaphone-fill text-primary mr-2"></i>Announcements</h4>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item">
+              <strong>Midterm Exams:</strong> Start on October 18. Check your schedule for details.
+            </li>
+            <li class="list-group-item">
+              <strong>Library Hours:</strong> Extended until 9pm during exam week.
+            </li>
+            <li class="list-group-item">
+              <strong>New Course:</strong> Introduction to AI is available next semester.
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <div id="heroCarousel" class="carousel slide hero-carousel mb-3" data-ride="carousel" data-interval="4500" aria-label="Main announcements carousel">
+      <ol class="carousel-indicators">
+        <li data-target="#heroCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#heroCarousel" data-slide-to="1"></li>
+        <li data-target="#heroCarousel" data-slide-to="2"></li>
+      </ol>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="images/Stamford-University-Oriental-Day.jpg" class="d-block w-100" alt="Stamford campus event">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Welcome to Stamford University</h5>
+            <p>Empowering students for a global future.</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="images/BG.png" class="d-block w-100" alt="Campus building">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Modern Facilities</h5>
+            <p>State-of-the-art classrooms and labs.</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="images/stiu-rama-9-3-1.jpg" class="d-block w-100" alt="Stamford Rama 9 campus">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Student Life</h5>
+            <p>Join clubs, events, and make lifelong friends.</p>
+          </div>
+        </div>
+      </div>
+      <a class="carousel-control-prev" href="#heroCarousel" role="button" data-slide="prev" aria-label="Previous announcement">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      </a>
+      <a class="carousel-control-next" href="#heroCarousel" role="button" data-slide="next" aria-label="Next announcement">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      </a>
+    </div>
+
+    <section class="events-row" aria-label="Current events">
+      <div class="d-flex justify-content-between align-items-center flex-wrap mb-3">
+        <h4 class="section-heading mb-2">Campus Events</h4>
+        <div class="btn-group btn-group-sm event-filter" role="group" aria-label="Filter campus events">
+          <button class="btn btn-primary active" type="button" data-filter="all">All</button>
+          <button class="btn btn-outline-primary" type="button" data-filter="career">Career</button>
+          <button class="btn btn-outline-primary" type="button" data-filter="academic">Academic</button>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-4 mb-3 event-card" data-category="career">
+          <div class="card h-100">
+            <div class="card-body">
+              <span class="badge badge-info mb-2">Career</span>
+              <h5 class="card-title">Career Fair</h5>
+              <p class="card-text">Meet hiring teams and prepare your portfolio on Oct 15, 2025.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-3 event-card" data-category="academic">
+          <div class="card h-100">
+            <div class="card-body">
+              <span class="badge badge-success mb-2">Workshop</span>
+              <h5 class="card-title">Web Development Bootcamp</h5>
+              <p class="card-text">Practice responsive layouts and JavaScript basics on Oct 20, 2025.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-3 event-card" data-category="academic">
+          <div class="card h-100">
+            <div class="card-body">
+              <span class="badge badge-warning mb-2">Seminar</span>
+              <h5 class="card-title">AI in Education</h5>
+              <p class="card-text">Explore classroom AI tools and academic integrity on Oct 25, 2025.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer id="footer">
+    <div class="container">
+      <div class="d-flex justify-content-between align-items-center flex-wrap footer-flex">
+        <div>
+          <strong>Zwe Maung Maung Than</strong>
+          <div style="font-size:0.85rem; color:rgba(233,242,255,0.9)">Student ID: 2310040006</div>
+        </div>
+        <div class="text-right">
+          <div><a class="email-link" href="mailto:international@stamford.edu">international@stamford.edu</a></div>
+          <div class="mt-1">
+            <a href="https://www.facebook.com/stamfordthailand/" class="text-light mr-2" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://x.com/stamfordiu" class="text-light" aria-label="X / Twitter"><i class="fab fa-x-twitter"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="text-center mt-2" style="font-size:0.82rem; color:rgba(233,242,255,0.75)">
+        &copy; <span class="year"></span> Stamford University - All rights reserved
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
+
+
+
+

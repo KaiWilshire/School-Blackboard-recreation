@@ -1,0 +1,189 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Stamford Blackboard - Schedule</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" crossorigin="anonymous">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet" />
+  </head>
+  <body>
+  <nav class="navbar navbar-expand-lg navbar-dark app-navbar">
+    <a class="navbar-brand app-brand" href="home.html">
+      <img src="images/Stamford-Logo.png" class="app-brand-logo" alt="Stamford Logo">
+    </a>
+    <button class="navbar-toggler app-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav mx-auto app-nav-links">
+          <li class="nav-item"><a class="nav-link" href="home.html"><i class="fa-solid fa-house mr-1"></i>Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="assignments.html"><i class="fa-solid fa-book-open mr-1"></i>Courses</a></li>
+          <li class="nav-item active"><a class="nav-link" href="schedule.html"><i class="fa-regular fa-calendar-days mr-1"></i>Schedule <span class="sr-only">(current)</span></a></li>
+          <li class="nav-item"><a class="nav-link" href="supplies.html"><i class="fa-solid fa-bag-shopping mr-1"></i>Supplies</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html"><i class="fa-regular fa-address-card mr-1"></i>Contact</a></li>
+      </ul>
+      <div class="dropdown app-user-menu">
+        <button class="btn dropdown-toggle d-flex align-items-center" type="button" id="hamburgerMenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          <i class="fa-regular fa-user mr-1"></i>
+          <span>Student</span>
+        </button>
+        <div class="dropdown-menu dropdown-menu-right shadow" aria-labelledby="hamburgerMenu">
+          <a class="dropdown-item" href="profile.html"><i class="fa-regular fa-id-card mr-2"></i>Profile</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item text-danger" href="Login.html"><i class="fa-solid fa-arrow-right-from-bracket mr-2"></i>Sign Out</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+<main class="container my-4">
+      <section class="schedule-hero mb-4">
+        <div>
+          <span class="eyebrow">Weekly Planner</span>
+          <h1 class="page-title mb-2">Class Schedule</h1>
+          <p class="mb-0">Six active courses, quick links to course materials, and a clear look at your week.</p>
+        </div>
+        <a href="assignments.html" class="btn btn-light"><i class="fa-solid fa-book-open mr-2"></i>Open Courses</a>
+      </section>
+
+      <section class="row schedule-stats mb-4" aria-label="Schedule summary">
+        <div class="col-md-4 mb-3">
+          <div class="stat-tile">
+            <i class="fa-regular fa-calendar-check"></i>
+            <div>
+              <strong>6 Courses</strong>
+              <span>18 classroom hours</span>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-3">
+          <div class="stat-tile">
+            <i class="fa-regular fa-clock"></i>
+            <div>
+              <strong>Earliest Class</strong>
+              <span>8:30 AM</span>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-3">
+          <div class="stat-tile">
+            <i class="fa-solid fa-mug-hot"></i>
+            <div>
+              <strong>Study Block</strong>
+              <span>Friday afternoon</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="coursesSection" class="mb-4">
+        <div class="card shadow-sm">
+          <div class="card-body">
+            <div class="d-flex justify-content-between align-items-center flex-wrap mb-3">
+              <div>
+                <h4 class="card-title mb-1">Current Schedule and Courses</h4>
+                <p class="text-muted mb-0">Click a course code to view work material, assignments, and attendance.</p>
+              </div>
+              <span class="badge badge-primary p-2 mt-2 mt-md-0">Semester 1</span>
+            </div>
+            <div class="table-responsive">
+              <table class="table schedule-table table-hover mb-0">
+                <thead>
+                  <tr>
+                    <th scope="col">Course</th>
+                    <th scope="col">Title</th>
+                    <th scope="col">Instructor</th>
+                    <th scope="col">Day</th>
+                    <th scope="col">Time</th>
+                    <th scope="col">Room</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="course-link" href="assignments.html?course=ite321">ITE 321</a></td>
+                    <td>System Analysis</td>
+                    <td>Susanta Malaka</td>
+                    <td><span class="day-pill">Mon/Thu</span></td>
+                    <td>8:30 - 10:30</td>
+                    <td>B204</td>
+                  </tr>
+                  <tr>
+                    <td><a class="course-link" href="assignments.html?course=ite101">ITE 101</a></td>
+                    <td>Fundamentals of Information Technology</td>
+                    <td>Dr. Lanka</td>
+                    <td><span class="day-pill info">Tue/Fri</span></td>
+                    <td>8:30 - 10:30</td>
+                    <td>A302</td>
+                  </tr>
+                  <tr>
+                    <td><a class="course-link" href="assignments.html?course=ite120">ITE 120</a></td>
+                    <td>Web Development 1</td>
+                    <td>Dr. Amin</td>
+                    <td><span class="day-pill success">Mon/Thu</span></td>
+                    <td>10:30 - 12:30</td>
+                    <td>Lab 3</td>
+                  </tr>
+                  <tr>
+                    <td><a class="course-link" href="assignments.html?course=eng103">ENG 103</a></td>
+                    <td>College English 3</td>
+                    <td>Ms. Natalie Smith</td>
+                    <td><span class="day-pill warning">Wed</span></td>
+                    <td>9:00 - 12:00</td>
+                    <td>C110</td>
+                  </tr>
+                  <tr>
+                    <td><a class="course-link" href="assignments.html?course=mis103">MIS 103</a></td>
+                    <td>Computer Basics</td>
+                    <td>Mr. Kittipong S.</td>
+                    <td><span class="day-pill info">Tue</span></td>
+                    <td>13:30 - 16:30</td>
+                    <td>Lab 1</td>
+                  </tr>
+                  <tr>
+                    <td><a class="course-link" href="assignments.html?course=ite221">ITE 221</a></td>
+                    <td>Introduction to Java</td>
+                    <td>Dr. Chen Wei</td>
+                    <td><span class="day-pill success">Fri</span></td>
+                    <td>10:30 - 13:30</td>
+                    <td>Lab 4</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer id="footer">
+      <div class="container">
+        <div class="d-flex justify-content-between align-items-center flex-wrap footer-flex">
+          <div>
+            <strong>Zwe Maung Maung Than</strong>
+            <div style="font-size:0.85rem; color:rgba(233,242,255,0.9)">Student ID: 2310040006</div>
+          </div>
+          <div class="text-right">
+            <div><a class="email-link" href="mailto:international@stamford.edu">international@stamford.edu</a></div>
+            <div class="mt-1">
+              <a href="https://www.facebook.com/stamfordthailand/" class="text-light mr-2" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+              <a href="https://x.com/stamfordiu" class="text-light" aria-label="X / Twitter"><i class="fab fa-x-twitter"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="text-center mt-2" style="font-size:0.82rem; color:rgba(233,242,255,0.75)">
+          &copy; <span class="year"></span> Stamford University - All rights reserved
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js"></script>
+    <script src="js/app.js"></script>
+  </body>
+</html>
+
+
+
+
